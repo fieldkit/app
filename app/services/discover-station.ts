@@ -1,10 +1,9 @@
 import Bluebird from "bluebird";
 import { Device } from "@nativescript/core";
-import { Conservify, Services, OurStore } from "@/services";
 import { StartOptions, StopOptions } from "@/wrappers/networking";
+import { FoundService, LostService, UdpMessage, Conservify, Services, OurStore } from "@/services";
 import { Connectivity } from "@/wrappers/connectivity";
 import { ActionTypes, RefreshNetworkAction } from "@/store";
-import { FoundService, LostService, UdpMessage } from "@/services";
 import { fk_app } from "fk-app-protocol/fk-app";
 import Config from "@/config";
 

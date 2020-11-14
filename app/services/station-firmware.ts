@@ -127,7 +127,7 @@ export default class StationFirmware {
     }
 
     private async deleteOldFirmware(): Promise<void> {
-        return await this.services
+        await this.services
             .Database()
             .getAllFirmware()
             .then((firmware) => {

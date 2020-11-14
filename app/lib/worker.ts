@@ -6,7 +6,7 @@ import { TaskWorker } from "./tasks";
 // import { ProcessAllStationsTask, ProcessStationFilesTask } from "./process";
 // import { createAdaptedDataServices } from "./data-services";
 
-require("globals"); // eslint-disable-line nativescript/no-short-imports
+require("globals"); // eslint-disable-line
 
 try {
     console.log(`worker:starting`);

@@ -1,9 +1,9 @@
-{
-    "root": true,
-    "env": {
+module.exports = {
+    root: true,
+    env: {
         "node": true
     },
-    "extends": [
+    extends: [
         "eslint:recommended",
         "plugin:@typescript-eslint/recommended",
         "plugin:@typescript-eslint/eslint-recommended",
@@ -11,16 +11,16 @@
         "plugin:vue/base",
         "plugin:vue/recommended"
     ],
-    "parser": "vue-eslint-parser",
-    "parserOptions": {
+    parser: "vue-eslint-parser",
+    parserOptions: {
         "ecmaVersion": 2020,
         "parser": "@typescript-eslint/parser",
         "project": "./tsconfig.json",
         "sourceType": "module",
         "extraFileExtensions": [".vue"]
     },
-    "plugins": ["vue", "@typescript-eslint", "nativescript"],
-    "rules": {
+    plugins: ["vue", "@typescript-eslint", "nativescript"],
+    rules: {
         "@typescript-eslint/no-unused-vars": [
             "warn",
             {
@@ -35,7 +35,7 @@
         "vue/attribute-hyphenation": "off",
         "nativescript/no-short-imports": "error"
     },
-    "globals": {
+    globals: {
         "_L": "readonly"
     }
 }
